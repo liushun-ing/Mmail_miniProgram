@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/inbox/inbox",
+    "pages/mailDetail/mailDetail",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/setUserInfo/setUserInfo",
+    "pages/index/index",
+    "pages/sendEmail/sendEmail",
+    "pages/myMailbox/myMailbox",
+    "pages/myMailbox/inbox/inbox",
+    "pages/myMailbox/starMail/starMail",
+    "pages/myMailbox/sendMail/sendMail",
+    "pages/myMailbox/sentMailDetail/sentMailDetail",
+    "pages/myMailbox/deletedMailDetail/deletedMailDetail",
+    "pages/myMailbox/draft/draft",
+    "pages/myMailbox/sentMail/sentMail",
+    "pages/myMailbox/deletedMail/deletedMail",
+    "pages/myMailbox/draftDetail/draftDetail",
+    "pages/setting/setting",
+    "pages/setting/changePassword/changePassword",
+    "pages/admin/admin",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "M邮箱",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#9a9a9a",
+    "selectedColor": "#2984EF",
+    "backgroundColor": "#F8F8FA",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/inbox/inbox",
+      "text": "收件箱",
+      "iconPath": "icon/mail.png",
+      "selectedIconPath": "icon/mail_s.png"
+    },{
+      "pagePath": "pages/myMailbox/myMailbox",
+      "text": "我的邮箱",
+      "iconPath": "icon/my.png",
+      "selectedIconPath": "icon/my_s.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

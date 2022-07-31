@@ -1,0 +1,15 @@
+<van-search model:value="{{ searchKey }}" placeholder="请输入搜索关键词" background="rgb(240, 240, 240)" field-class="search-field-class" show-action bind:cancel="onCancel" bind:search="onSearch"></van-search>
+
+<view class="mail-view" wx:for="{{mailList}}" wx:key="emailId" bindtap='getDetail' data-id="{{item.emailId}}">
+    <view class="mail-head">
+        <view>
+            <view class="from-name">{{item.toName ? '<' + item.toName + '>' : '<>' }}</view>
+                    <view class="from-account">{{item.toEmail}}</view>
+            </view>
+            <view class="send_time">edit:{{item.sendTime}}</view>
+        </view>
+        <view class="mail-body">
+            <view class="subject">{{item.subject ? item.subject : '未填写主题'}}</view>
+            <view class="content">{{item.content ? item.content : '未填写内容'}}</view>
+        </view>
+    </view>

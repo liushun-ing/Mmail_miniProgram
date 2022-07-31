@@ -1,0 +1,57 @@
+.search-field-class {
+    background-color: rgb(255, 255, 255);
+}
+
+.mail-view {
+    border-bottom: rgb(240, 240, 240) 1px solid;
+    padding: 0 20rpx;
+}
+
+.mail-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 20rpx;
+}
+
+.from-name {
+    display: inline-block;
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.from-account {
+    display: inline-block;
+    font-size: 28rpx;
+    padding-left: 10rpx;
+}
+
+.send_time {
+    font-size: 28rpx;
+    color: gray;
+}
+
+.mail-body {
+    padding-top: 10rpx;
+    padding-bottom: 20rpx;
+}
+
+.subject {
+    font-size: 28rpx;
+    padding-bottom: 10rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.content {
+    font-size: 28rpx;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

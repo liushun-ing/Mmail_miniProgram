@@ -1,0 +1,20 @@
+<page>
+    <view class="title-box">设置个人资料</view>
+    <image src="{{avatar ? avatar : '../../icon/wode.png'}}" mode="scaleToFill" class="avatar" bindtap="setAvatar"></image>
+    <view>
+        <van-cell-group>
+            <van-field label="昵称:" model:value="{{ nickname }}" placeholder="请输入昵称" border />
+            <van-field label="手机号码:" model:value="{{ phone }}" placeholder="请输入手机号码" border />
+        </van-cell-group>
+    </view>
+    <view class="button-box">
+        <van-button type="info" round custom-style="height: 85rpx; width: 600rpx;" bindtap="updateUserInfo">完成</van-button>
+    </view>
+
+    <view class="skip-button">
+        <navigator open-type="reLaunch" hover-class="skip-navigator" url="/pages/inbox/inbox">
+            跳过，下次再说
+        </navigator>
+    </view>
+
+</page>

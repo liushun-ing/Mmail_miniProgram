@@ -1,0 +1,14 @@
+{
+    "usingComponents": {
+        "van-search": "@vant/weapp/search/index",
+        "van-tabbar": "@vant/weapp/tabbar/index",
+        "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+        "van-card": "@vant/weapp/card/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-cell": "@vant/weapp/cell/index",
+        "van-cell-group": "@vant/weapp/cell-group/index",
+        "van-empty": "@vant/weapp/empty/index"
+    },
+    "enablePullDownRefresh": true,
+    "navigationBarTitleText": "收件箱"
+}

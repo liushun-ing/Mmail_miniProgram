@@ -1,0 +1,17 @@
+<page>
+    <view>
+        <view class="button-save">
+            <van-button type="default" hairline round plain color="rgb(38, 126, 241)" bindtap="addDraft" size="small">存为草稿</van-button>
+        </view>
+        <view class="button-send">
+            <van-button type="primary" hairline round bindtap="sendEmail" size="small">确认发送</van-button>
+        </view>
+    </view>
+    <view>
+        <van-field label="收件人：" placeholder="收件人" title-width="4em" model:value="{{ toEmail }}" border />
+        <van-field label="主题：" placeholder="主题" title-width="4em" model:value="{{ subject }}" border />
+    </view>
+    <view>
+        <van-field model:value="{{ content }}" autosize input-class="mail-content-field" type="textarea" placeholder="内容" />
+    </view>
+</page>

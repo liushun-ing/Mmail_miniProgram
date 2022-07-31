@@ -1,0 +1,27 @@
+.value-class {
+    margin-right: 235rpx;
+}
+
+.welcome-box {
+    padding: 35rpx;
+    font-size: 55rpx;
+    font-weight: 550;
+    letter-spacing: 6rpx;
+}
+
+.login-button {
+    display:flex; 
+    justify-content: center;
+    padding-top: 50rpx;
+}
+
+.register-button {
+    margin-left: 200rpx;
+    width: 350rpx;
+    padding-top: 30rpx;
+    color: rgb(0, 125, 241);
+}
+
+.register-navigator {
+    color:rgb(0, 66, 128);
+}

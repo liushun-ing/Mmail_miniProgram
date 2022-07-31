@@ -1,0 +1,30 @@
+.title-box {
+    padding: 35rpx;
+    font-size: 55rpx;
+    font-weight: 550;
+    letter-spacing: 6rpx;
+}
+
+.avatar {
+    width: 250rpx;
+    height: 250rpx;
+    margin-left: 250rpx;
+    margin-bottom: 20rpx;
+}
+
+.button-box{
+    display:flex; 
+    justify-content: center;
+    padding-top: 50rpx;
+}
+
+.skip-button {
+    margin-left: 260rpx;
+    width: 350rpx;
+    padding-top: 30rpx;
+    color: rgb(25,137,250);
+}
+
+.skip-navigator {
+    color:rgb(3, 51, 99);
+}

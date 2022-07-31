@@ -1,0 +1,28 @@
+<view class="modify_wrap">
+  <van-cell-group>
+    <van-cell border title="设置新昵称" value="{{userInfo.nickname ? userInfo.nickname : '未设置'}}" bind:click="setNewNickname" size="large" is-link arrow-direction="{{nicknameShow ? 'down' : ''}}"></van-cell>
+    <view class="change_wrap" hidden="{{!nicknameShow}}">
+      <input class="input_class" type="nickname" adjust-position placeholder="请输入新昵称" bindinput="inputNickname"/>
+      <view class="btn_class"><button type="primary" size="mini" bindtap="submitNickname">提交</button></view>
+    </view>
+    <van-cell border title="绑定手机号" value="{{userInfo.phone ? userInfo.phone : '未设置'}}" bind:click="setNewPhone" size="large" is-link arrow-direction="{{phoneShow ? 'down' : ''}}"></van-cell>
+    <view class="change_wrap" hidden="{{!phoneShow}}">
+      <input class="input_class" type="number" adjust-position placeholder="请输入新手机号" bindinput="inputPhone"/>
+      <view hidden="{{phoneStatus}}" class="tip">手机号格式错误</view>
+      <view class="btn_class"><button type="primary" size="mini" bindtap="submitPhone">提交</button></view>
+    </view>
+    <van-cell border title="修改密码" url="/pages/setting/changePassword/changePassword" size="large" is-link></van-cell>
+  </van-cell-group>
+</view>
+
+<view class="quit_wrap">
+  <van-cell-group>
+    <van-cell title-style="text-align: center;" border title="切换账号/登陆" bind:click="switchAccount" size="large"></van-cell>
+  </van-cell-group>
+</view>
+
+<view class="register_wrap">
+  <van-cell-group>
+    <van-cell title-style="text-align: center;" border title="注册新账号" bind:click="registerNewAccount" size="large"></van-cell>
+  </van-cell-group>
+</view>

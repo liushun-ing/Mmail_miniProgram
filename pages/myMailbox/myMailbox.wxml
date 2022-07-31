@@ -1,0 +1,38 @@
+<view class="my-inbox">
+  <view class="user-card">
+    <view class="user-type">
+      {{authority == 0 ? '普通用户' : '管理员'}}
+    </view>
+    <view class="info">
+      <view class="info_s">
+        <view class="user-name">{{userInfo.nickname}}</view>
+        <view class="user-account">{{userInfo.account}}</view>
+      </view>
+      <view bindtap="setAvatar">
+        <view wx:if="{{userInfo.avatar}}" class="user-icon">
+          <image class="image-info" src="{{userInfo.avatar}}" mode="aspectFill"></image>
+        </view>
+        <view wx:else class="user-icon">
+          <van-icon name="user-o" color="gray" size="100rpx" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <van-cell-group>
+      <van-cell border icon="edit" title="写邮件" url="/pages/sendEmail/sendEmail" size="large" is-link></van-cell>
+      <van-cell border icon="envelop-o" title="收件箱" url="/pages/myMailbox/inbox/inbox" size="large" is-link></van-cell>
+      <van-cell border icon="star-o" title="星标邮件" url="/pages/myMailbox/starMail/starMail" size="large" is-link></van-cell>
+      <van-cell border icon="notes-o" title="草稿箱" url="/pages/myMailbox/draft/draft" size="large" is-link></van-cell>
+      <van-cell border icon="certificate" title="已发送" url="/pages/myMailbox/sentMail/sentMail" size="large" is-link></van-cell>
+      <van-cell border icon="delete-o" title="已删除" url="/pages/myMailbox/deletedMail/deletedMail" size="large" is-link></van-cell>
+    </van-cell-group>
+  </view>
+
+  <view class="setting">
+    <van-cell-group>
+      <van-cell border icon="award-o" title="管理员权限" bindtap="naviToAdmin" size="large" is-link></van-cell>
+      <van-cell border icon="setting-o" title="设置" url="/pages/setting/setting" size="large" is-link></van-cell>
+    </van-cell-group>
+  </view>
+</view>

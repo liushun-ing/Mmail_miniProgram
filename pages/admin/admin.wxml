@@ -1,0 +1,49 @@
+<van-tabs active="{{ active }}" bind:change="onChange" sticky animated swipeable>
+  <van-tab title="配置" name="params">
+    <view class="content">
+      <van-cell-group inset title="服务配置" border>
+        <van-cell size="large" title="域名" value="{{serverParams.domainName}}" />
+      </van-cell-group>
+      <van-cell-group inset title="服务端口" border>
+        <van-cell size="large" title="smtp" value="{{serverParams.smtpPort}}" />
+        <van-cell size="large" title="pop3" value="{{serverParams.pop3Port}}" />
+      </van-cell-group>
+      <van-cell-group inset title="邮箱配置" border>
+        <van-cell size="large" title="邮箱大小" value="{{serverParams.mailboxSize}}" />
+        <van-cell size="large" title="最大收件人数" value="{{serverParams.maxRcpt}}" />
+      </van-cell-group>
+    </view>
+  </van-tab>
+  <van-tab title="过滤" name="filter">
+    <view class="content">
+      <van-cell-group inset title="过滤账号 {{filterTotal}} 条" border>
+        <van-cell size="large" wx:for="{{filterAccountList}}" wx:key="account" title="{{item.account}}" value="{{item.nickname}}" value-class="value_class" />
+      </van-cell-group>
+    </view>
+  </van-tab>
+  <van-tab title="日志" name="logs">
+    <view class="content">
+      <van-cell-group inset title="日志 {{logTotal}} 条" border>
+        <van-cell size="large" wx:for="{{logList}}" wx:key="id" title="{{item.type}}" value="{{item.content}}" label="{{item.logTime}}" value-class="value_class" title-width="200rpx" />
+      </van-cell-group>
+    </view>
+  </van-tab>
+  <van-tab title="权限" name="auth">
+    <view class="content">
+      <van-cell-group inset title="权限 {{userTotal}} 条" border>
+        <van-cell size="large" wx:for="{{userList}}" wx:key="userId" title="{{item.account}}" value="{{item.authority == 1 ? '管理员' : '普通用户'}}" label="{{item.nickname}}" value-class="value_class" title-width="200rpx" />
+      </van-cell-group>
+    </view>
+  </van-tab>
+  <van-tab title="群发" name="send">
+    <view class="button-send">
+      <van-button type="primary" hairline round bindtap="sendEmail" size="small">确认发送</van-button>
+    </view>
+    <van-cell-group>
+      <van-field label="收件人" autosize type="textarea" title-width="4em" model:value="{{ toEmail }}" border placeholder="每行一个收件人">
+      </van-field>
+      <van-field label="主题" title-width="4em" model:value="{{ subject }}" border placeholder="主题" />
+      <van-field model:value="{{ content }}" autosize adjust-position input-class="mail-content-field" type="textarea" placeholder="内容" />
+    </van-cell-group>
+  </van-tab>
+</van-tabs>

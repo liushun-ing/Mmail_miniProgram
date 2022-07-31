@@ -1,0 +1,39 @@
+<page>
+    <van-dialog id="van-dialog" />
+    <view class="head">
+        <view class="mail-subject">{{email.subject}}</view>
+        <view class="more" bindtap="clickMore">{{moreOrLess}}</view>
+        <view class="mail-addresser">{{email.fromName ? email.fromName : '未知'}}</view>
+        <view wx:if="{{showHiddenContent}}" class="hidden-content">
+            <view class="label">发件人: </view>
+            <view class="user-name">
+                {{email.fromName ? email.fromName : '未知'}}
+            </view>
+            <view class="mail-address">{{email.fromEmail}}</view>
+            <view class="label">收件人: </view>
+            <view class="user-name">
+                {{ email.toName ? email.toName: '未知'}}
+            </view>
+            <view class="mail-address">{{email.toEmail}}</view>
+            <view class="label">
+                时间:
+            </view>
+            <view class="time-detail">
+                {{email.sendTime}}
+            </view>
+        </view>
+    </view>
+    <view class="body">
+        {{email.content}}
+    </view>
+
+    <view class="bottom">
+        <view bindtap='clickDelete'>
+            <van-icon size="60rpx" name="delete-o" />
+        </view>
+
+        <view bindtap="clearDelete">
+            <van-icon size="60rpx" name="revoke" />
+        </view>
+    </view>
+</page>

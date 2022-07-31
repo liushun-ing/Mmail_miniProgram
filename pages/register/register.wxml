@@ -1,0 +1,26 @@
+<page>
+    <view class="title-box">注册新邮箱</view>
+    <view>
+        <van-cell-group>
+            <van-field label="账号:" model:value="{{ account }}" placeholder="请输入账号名" border auto-focus>
+                <van-button slot="button" size="small" type="primary" bind:click="getDomain">
+                    {{serverParams.domainName ? '@' + serverParams.domainName : "点击获取域名"}}
+                </van-button>
+            </van-field>
+            <van-field label="密码:" model:value="{{ password }}" placeholder="请输入密码" border type="password" />
+            <van-field label="确认密码:" model:value="{{ rePassword }}" placeholder="请再输入密码" border type="password" />
+        </van-cell-group>
+    </view>
+    <view class="pass_tip">密码格式：包含大小写字母、数组和特殊字符(@/!/#/$/%/^/&/*)的8-12为字符</view>
+    <view class="register-button">
+        <van-button type="info" round custom-style="height: 85rpx; width: 600rpx;" bind:click="registerUser">立即注册</van-button>
+    </view>
+
+    <view class="login-button">
+        <navigator open-type="navigateBack" hover-class="login-navigator">
+            已有账号，返回登录
+        </navigator>
+    </view>
+
+    <van-dialog id="van-dialog" />
+</page>

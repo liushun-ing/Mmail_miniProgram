@@ -1,0 +1,16 @@
+.mail-content-field {
+  min-height: 700rpx !important;    
+  
+}
+
+.button-save {
+  padding: 10rpx;
+  margin-left: 10rpx;
+  float: left;
+}
+
+.button-send {
+  padding: 10rpx;
+  float: right;
+  margin-right: 10rpx;
+}

@@ -1,0 +1,85 @@
+/* pages/draftDetail/draftDetail.wxss */
+.scroll-view {
+    height: 1250rpx;
+}
+
+.head {
+    width: 750rpx;
+    border-bottom: gainsboro 1rpx solid;
+}
+
+.mail-subject {
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    font-size: 36rpx;
+    font-weight: 550;
+    letter-spacing: 2rpx;
+}
+
+.mail-addresser {
+    width: 500rpx;
+    font-size: 30rpx;
+    color:  rgb(136, 136, 136); 
+    padding-left: 20rpx;
+    margin-top: 20rpx;
+    margin-bottom: 30rpx;
+}
+
+.more {
+    width: 100rpx;
+    float: right;
+    margin-top: 20rpx;
+    color: lightskyblue;
+}
+
+.hidden-content {
+    margin-bottom: 20rpx;
+    padding-left: 20rpx;
+}
+
+.label {
+    color:rgb(104, 104, 104);
+    width:120rpx;
+    float:left;
+    font-size: 29rpx;
+}
+
+.user-name {
+    letter-spacing: 2rpx;
+    font-size: 28rpx;
+}
+
+.mail-address {
+    font-size: 30rpx;
+    padding-left: 120rpx;
+    padding-top: 5rpx;
+    padding-bottom: 5rpx;
+    color:rgb(104, 104, 104);
+    font-weight:lighter;
+}
+
+.time-detail {
+    width: 650rpx;
+    font-size: 28rpx;
+    color:rgb(104, 104, 104);
+}
+
+.body {
+    padding-bottom: 250rpx;
+    padding-top: 50rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+
+.bottom {
+    width:100%;
+    border-top: 1rpx rgb(202, 202, 202) solid;
+    padding-top: 20rpx;
+    height: 100rpx;
+    background-color: #F4F5F7;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}

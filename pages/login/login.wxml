@@ -1,0 +1,16 @@
+<view class="welcome-box">登录M邮箱</view>
+
+<van-cell-group>
+    <van-field label="账号" auto-focus model:value="{{ userId }}" placeholder="请输入账号" border="{{ true }}" />
+    <van-field label="密码" model:value="{{ password }}" placeholder="请输入密码" border="{{ true }}" type="password" />
+</van-cell-group>
+
+<view class="login-button">
+    <van-button round type="info" custom-style="height: 85rpx; width: 600rpx;" bind:click="login">登录</van-button>
+</view>
+
+<view class="register-button">
+    <navigator url="/pages/register/register" open-type="navigate" hover-class="register-navigator">
+        还没有账号？点击注册
+    </navigator>
+</view>

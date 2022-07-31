@@ -1,0 +1,30 @@
+page{
+  background-color: #F4F5F7;
+}
+
+.modify_wrap{
+  margin-top: 30rpx;
+}
+
+.tip{
+  font-size: 28rpx;
+  color: red;
+}
+
+.quit_wrap{
+  margin-top: 50rpx;
+}
+
+.register_wrap{
+  margin-top: 30rpx;
+}
+
+.change_wrap{
+  padding: 10rpx 30rpx;
+}
+.input_class{
+  padding: 10rpx 0rpx;
+}
+.btn_class{
+  text-align: right;
+}

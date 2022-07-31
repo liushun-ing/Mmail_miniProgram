@@ -1,0 +1,22 @@
+page{
+  background-color: #F4F5F7;
+}
+
+.content{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.value_class{
+  word-break: break-all;
+}
+
+.mail-content-field {
+  min-height: 700rpx!important;    
+}
+
+.button-send {
+  text-align: right;
+  padding: 10rpx;
+  margin-right: 10rpx;
+}

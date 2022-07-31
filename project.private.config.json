@@ -1,0 +1,161 @@
+{
+  "projectname": "Mmail",
+  "setting": {
+    "compileHotReLoad": false,
+    "urlCheck": false
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "pages/inbox/inbox",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/myMailbox/sendMail/sendMail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/myMailbox/inbox/inbox",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/register/register",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/mailDetail/mailDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/myMailbox/starMail/starMail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/myMailbox/draft/draft",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/setUserInfo/setUserInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的邮箱",
+          "pathName": "pages/myMailbox/myMailbox",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "设置",
+          "pathName": "pages/setting/setting",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "修改密码",
+          "pathName": "pages/setting/changePassword/changePassword",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "注册",
+          "pathName": "pages/register/register",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "设置个人资料",
+          "pathName": "pages/setUserInfo/setUserInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "管理员",
+          "pathName": "pages/admin/admin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "已发送",
+          "pathName": "pages/myMailbox/sentMail/sentMail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "已删除",
+          "pathName": "pages/myMailbox/deletedMail/deletedMail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "草稿",
+          "pathName": "pages/myMailbox/draft/draft",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "星标邮件",
+          "pathName": "pages/myMailbox/starMail/starMail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "邮件详情",
+          "pathName": "pages/mailDetail/mailDetail",
+          "query": "emailId=e90a45d5c1a924c273ad141ef2ae8b2b",
+          "scene": null
+        },
+        {
+          "name": "发邮件",
+          "pathName": "pages/sendEmail/sendEmail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的收件箱",
+          "pathName": "pages/myMailbox/inbox/inbox",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "首页收件箱",
+          "pathName": "pages/inbox/inbox",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
